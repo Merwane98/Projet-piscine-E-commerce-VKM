@@ -32,7 +32,7 @@
                      text-align: center;
                      padding: 10px;
                      }
-              .logo {
+              .logogauche {
                       float: left;
                      padding-right: 30px;
                      }      
@@ -40,15 +40,18 @@
                       float: right;
                      padding-right: 5px;
                      }      
+              .logocentre {
+                      float: center;
+                     padding-right: 5px;
+                     }      
         </style>
 </head>
 <body>
        <div id="header">
-       <img class="logo" src="logosite.png" alt="logosite" width="100" height="50"> <img class="logo" src="titresite.png" alt="titre" width="400" height="70">
-                            <img class="logodroite" src="logoadmin.png" alt="logoadmin" width="50" height="50">
-
-                            <img class="logodroite" src="logoconnexion.png" alt="logoconnexion" width="150" height="50">
-                            <img class="logodroite" src="logoinscription.png" alt="logoconnexion" width="150" height="50">
+              <img class="logogauche" src="logoadmin.png" alt="logosite" width="50" height="50">
+               <img class="logocentre" src="titresite.png" alt="titre" width="400" height="70">
+              <img class="logodroite" src="logoconnexion.png" alt="logoconnexion" width="150" height="50">
+              <img class="logodroite" src="logoinscription.png" alt="logoconnexion" width="150" height="50">
        </div>
 
        
