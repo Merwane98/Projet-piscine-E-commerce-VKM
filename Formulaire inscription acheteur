@@ -3,18 +3,17 @@
 <head>
 	<meta charset=utf-8/>
 	<title>Formulaire d'inscription acheteur</title>
-	<script type="text/javascript" src="myscripts.js"></script>
 </head>
 <body>
 	<h2>Formulaire d'inscription acheteur</h2>
 	<h3>Informations personnelles</h3>
-		<form>
+		<form action = "Formulaire_Inscription.php" method = "post">
 			<table>
 				<tr>
 				<td><b>Etat civil :</b></td>
 				</tr>
 				<tr>
-				<td>Civilité:</td>
+				<td>Civilite:</td>
 				<td>
 					<select type="text" name="civilite">
 						<option>Mme</option>
@@ -24,70 +23,68 @@
 				</tr>
 				<tr>
 				<td>Nom :</td>
-				<td><input type="text" id="nom"></td>
+				<td><input type="text" name="nom"></td>
 				</tr>
 				<tr>
-				<td>Prénom :</td>
-				<td><input type="text" id="prenom"></td>
+				<td>Prenom :</td>
+				<td><input type="text" name="prenom"></td>
 				</tr>
 				<tr>
 				<td>Date de naissance :</td>
-				<td><input type="Date" id="anniversaire"></td>
+				<td><input type="Date" name="anniversaire"></td>
 				</tr>
 				<tr>
 				<br>
 				</tr>
-				<td><br><br><b>Coordonnées :</b></td>
+				<td><br><br><b>Coordonnees :</b></td>
 				<tr>
-				<td>Téléphone :</td>
-				<td><input type="text" id="telephone"></td>
+				<td>Telephone :</td>
+				<td><input type="text" name="telephone"></td>
 				</tr>
 				<td>
 				<br>
 				</td>
 				<tr>
 				<td>Adresse :</td>
-				<td><input type="text" id="adresse"></td>
+				<td><input type="text" name="adresse"></td>
 				</tr>
 				<td>Code postal :</td>
-				<td><input type="text" id="cpostal"></td>
+				<td><input type="text" name="cpostal"></td>
 				</tr>
 				<td>Ville :</td>
-				<td><input type="text" id="ville"></td>
+				<td><input type="text" name="ville"></td>
 				</tr>
 				<td>
 				<br>
 				</td>
 				<tr>
 				<td>Adresse mail :</td>
-				<td><input type="text" id="mail1"></td>
+				<td><input type="text" name="mail1"></td>
 				</tr>
 				<tr>
-				<td>Vérifier votre adresse mail :</td>
-				<td><input type="text" id=mail2></td>
+				<td>Verifier votre adresse mail :</td>
+				<td><input type="text" name=mail2></td>
 				</tr>
 				<td>
 				<br>
 				</td>
 				<tr>
 				<td>Mot de passe :</td>
-				<td><input type="text" id="mdp1"></td>
+				<td><input type="text" name="mdp1"></td>
 				</tr>
 				<tr>
-				<td>Vérifier votre mot de passe :</td>
-				<td><input type="text" id="mdp2"></td>
+				<td>Verifier votre mot de passe :</td>
+				<td><input type="text" name="mdp2"></td>
 				</tr>
 				<td>
 				<br>
 				</td>
 				<tr>
-				<td><input type="Submit" value="Envoyer"></td>
+				<td><input type="Submit" value="Valider"></td>
 				<td><input type="Reset" value="Effacer"></td>
 				</tr>
 			</table>
 		</form>
-		<div id="errodiv">
-		</div>
 	</body>
 </html>
 		
