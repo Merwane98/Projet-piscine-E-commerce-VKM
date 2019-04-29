@@ -11,7 +11,7 @@ AdresseMail varchar(255) NOT NULL,
 MotdePasse varchar(255) NOT NULL
 );
 
-Insert into Admin (Civilite, Nom, Prenom, DateNaissance, Telephone, Adresse, CodePostal, Ville, AdresseMail, MotdePasse) values 
+Isert into Admin (Civilite, Nom, Prenom, DateNaissance, Telephone, Adresse, CodePostal, Ville, AdresseMail, MotdePasse) values 
 ("Monsieur", "Easter", "Admin", '1970-10-10', "0753902216", "30 avenue des Champs Elysées", "75008", "Paris", "admin.easter@hotmail.fr", "eceamazon");
 
 CREATE TABLE Acheteur(
