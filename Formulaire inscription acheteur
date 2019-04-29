@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8/>
+	<title>Formulaire d'inscription acheteur</title>
+	<script type="text/javascript" src="myscripts.js"></script>
+</head>
+<body>
+	<h2>Formulaire d'inscription acheteur</h2>
+	<h3>Informations personnelles</h3>
+		<form>
+			<table>
+				<tr>
+				<td><b>Etat civil :</b></td>
+				</tr>
+				<tr>
+				<td>Civilité:</td>
+				<td>
+					<select type="text" name="civilite">
+						<option>Mme</option>
+						<option>M.</option>
+					</select>
+				</td>
+				</tr>
+				<tr>
+				<td>Nom :</td>
+				<td><input type="text" id="name"></td>
+				</tr>
+				<tr>
+				<td>Prénom :</td>
+				<td><input type="text" id="firstname"></td>
+				</tr>
+				<tr>
+				<td>Date de naissance :</td>
+				<td><input type="Date" id="birth"></td>
+				</tr>
+				<tr>
+				<br>
+				</tr>
+				<td><br><br><b>Coordonnées :</b></td>
+				<tr>
+				<td>Téléphone :</td>
+				<td><input type="text" id="number"></td>
+				</tr>
+				<td>
+				<br>
+				</td>
+				<tr>
+				<td>Adresse :</td>
+				<td><input type="text" id="mail"></td>
+				</tr>
+				<td>Code postal :</td>
+				<td><input type="text" id="mail"></td>
+				</tr>
+				<td>Ville :</td>
+				<td><input type="text" id="mail"></td>
+				</tr>
+				<td>
+				<br>
+				</td>
+				<tr>
+				<td>Adresse mail :</td>
+				<td><input type="text" id="web"></td>
+				</tr>
+				<tr>
+				<td>Vérifier votre adresse mail :</td>
+				<td><input type="text" id="web"></td>
+				</tr>
+				<td>
+				<br>
+				</td>
+				<tr>
+				<td>Mot de passe :</td>
+				<td><input type="text" id="web"></td>
+				</tr>
+				<tr>
+				<td>Vérifier votre mot de passe :</td>
+				<td><input type="text" id="web"></td>
+				</tr>
+				<td><br><br><b>Autre :</b></td>
+				<tr>
+				<td>Souhaitez :</td>
+				<td>
+					C1<input type="checkbox" id="niveau" value="C1"/>
+					B1<input type="checkbox" id="niveau" value="C1"/>
+					A1<input type="checkbox" id="niveau" value="C1"/>
+					<br>
+					<br>
+				</td>
+				</tr>
+				<tr>
+				<td>Langages informatiques :</td>
+				<td>
+					HTML<input type="checkbox" id="typel" value="HTML"/>
+					CSS<input type="checkbox" id="typel" value="CSS"/>
+					Javascript<input type="checkbox" id="typel" value="Javascript"/>
+					PHP<input type="checkbox" id="typel" value="PHP"/>
+					<br>
+					<br>
+				</td>
+				</tr>
+				<tr>
+				<td><input type="Submit" value="Envoyer"></td>
+				<td><input type="Reset" value="Effacer"></td>
+				</tr>
+			</table>
+		</form>
+		<div id="errodiv">
+		</div>
+	</body>
+</html>
+		
