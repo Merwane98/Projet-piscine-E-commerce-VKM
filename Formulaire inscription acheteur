@@ -79,7 +79,7 @@
 				</tr>
 				<td><br><br><b>Autre :</b></td>
 				<tr>
-				<td>Souhaitez :</td>
+				<td>Souhaiter :</td>
 				<td>
 					C1<input type="checkbox" id="niveau" value="C1"/>
 					B1<input type="checkbox" id="niveau" value="C1"/>
