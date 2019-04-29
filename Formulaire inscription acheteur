@@ -24,7 +24,7 @@
 				</tr>
 				<tr>
 				<td>Nom :</td>
-				<td><input type="text" id="Nom"></td>
+				<td><input type="text" id="nom"></td>
 				</tr>
 				<tr>
 				<td>Prénom :</td>
