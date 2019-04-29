@@ -179,14 +179,14 @@
                      padding: 10px;
                      }
               #categoriegauche{
-                     background-color: grey;
-                     color: white;
+                     background-color: white;
+                     color: grey;
                      text-align: left;
                      padding: 5px;
                      } 
               #categoriedroite{
-                     background-color: grey;
-                     color: white;
+                     background-color: white;
+                     color: grey;
                      text-align: right;
                      padding: 5px;
                      } 
@@ -245,8 +245,17 @@
                      <li><a href="#">Inscription</a></li>
               </ul>
        </li>
+       <li><a href="#">CONTACT</a>
+              <ul>
+                     <li><a href="#">A propos de nous</a></li>
+                     <li><a href="#">Nous contacter</a></li>
+                     <li><a href="#">Signaler un problème</a></li>
+              </ul>
+
+       </li>
 </ul>
-       
+<br><br><br><br><br><br>
+
 </p>
 
        </div>
