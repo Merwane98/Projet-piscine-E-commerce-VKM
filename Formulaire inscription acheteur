@@ -77,28 +77,9 @@
 				<td>Vérifier votre mot de passe :</td>
 				<td><input type="text" id="web"></td>
 				</tr>
-				<td><br><br><b>Autre :</b></td>
-				<tr>
-				<td>Souhaiter :</td>
 				<td>
-					C1<input type="checkbox" id="niveau" value="C1"/>
-					B1<input type="checkbox" id="niveau" value="C1"/>
-					A1<input type="checkbox" id="niveau" value="C1"/>
-					<br>
-					<br>
+				<br>
 				</td>
-				</tr>
-				<tr>
-				<td>Langages informatiques :</td>
-				<td>
-					HTML<input type="checkbox" id="typel" value="HTML"/>
-					CSS<input type="checkbox" id="typel" value="CSS"/>
-					Javascript<input type="checkbox" id="typel" value="Javascript"/>
-					PHP<input type="checkbox" id="typel" value="PHP"/>
-					<br>
-					<br>
-				</td>
-				</tr>
 				<tr>
 				<td><input type="Submit" value="Envoyer"></td>
 				<td><input type="Reset" value="Effacer"></td>
