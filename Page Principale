@@ -211,6 +211,7 @@
        <div id="header">
               <img class="logogauche" src="logoadmin.png" alt="logosite" width="50" height="50">
                <img class="logocentre" src="titresite.png" alt="titre" width="400" height="70">
+               <a href="PageAccueil.html"><img class="logodroite" src="retour.png" alt="retour" width="50" height="50"></a>
                <img class="logodroite" src="panier.png" alt="titre" width="50" height="50">
        </div>
        
