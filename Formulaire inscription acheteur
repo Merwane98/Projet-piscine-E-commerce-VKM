@@ -24,15 +24,15 @@
 				</tr>
 				<tr>
 				<td>Nom :</td>
-				<td><input type="text" id="name"></td>
+				<td><input type="text" id="Nom"></td>
 				</tr>
 				<tr>
 				<td>Prénom :</td>
-				<td><input type="text" id="firstname"></td>
+				<td><input type="text" id="prenom"></td>
 				</tr>
 				<tr>
 				<td>Date de naissance :</td>
-				<td><input type="Date" id="birth"></td>
+				<td><input type="Date" id="anniversaire"></td>
 				</tr>
 				<tr>
 				<br>
@@ -40,42 +40,42 @@
 				<td><br><br><b>Coordonnées :</b></td>
 				<tr>
 				<td>Téléphone :</td>
-				<td><input type="text" id="number"></td>
+				<td><input type="text" id="telephone"></td>
 				</tr>
 				<td>
 				<br>
 				</td>
 				<tr>
 				<td>Adresse :</td>
-				<td><input type="text" id="mail"></td>
+				<td><input type="text" id="adresse"></td>
 				</tr>
 				<td>Code postal :</td>
-				<td><input type="text" id="mail"></td>
+				<td><input type="text" id="cpostal"></td>
 				</tr>
 				<td>Ville :</td>
-				<td><input type="text" id="mail"></td>
+				<td><input type="text" id="ville"></td>
 				</tr>
 				<td>
 				<br>
 				</td>
 				<tr>
 				<td>Adresse mail :</td>
-				<td><input type="text" id="web"></td>
+				<td><input type="text" id="mail1"></td>
 				</tr>
 				<tr>
 				<td>Vérifier votre adresse mail :</td>
-				<td><input type="text" id="web"></td>
+				<td><input type="text" id=mail2></td>
 				</tr>
 				<td>
 				<br>
 				</td>
 				<tr>
 				<td>Mot de passe :</td>
-				<td><input type="text" id="web"></td>
+				<td><input type="text" id="mdp1"></td>
 				</tr>
 				<tr>
 				<td>Vérifier votre mot de passe :</td>
-				<td><input type="text" id="web"></td>
+				<td><input type="text" id="mdp2"></td>
 				</tr>
 				<td>
 				<br>
