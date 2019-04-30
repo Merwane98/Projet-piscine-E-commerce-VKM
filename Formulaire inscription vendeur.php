@@ -26,7 +26,7 @@
     if($mail2 != $mail1) {$erreur .= "<p><b>Adresse mail de vérification différente de la précédente. Merci de le modifier.</b><br></p>";}
     if($mdp1 == "") {$erreur .= "<p><b>Le champ Mot de passe est vide. Merci de le renseigner.</b><br></p>";}
     if($mdp2 != $mdp1) {$erreur .= "<p><b>Mot de passe de vérification différent du précedent. Merci de le modifier.</b><br></p>";}
-    if ($erreur == "") {echo "<p><b>Bienvenue ".$prenom.", votre compte vendeur vient d'être créé !<br>En vous souhaitant de bonnes ventes !</b></p>";}
+    if ($erreur == "") {echo '<td><img src="logoadmin.png" width="50" height="50">';echo '<td><img src="titresite.png" width="400" height="70">';echo '<td><img src="panier.png" width="50" height="50">'; echo "<p><b>Bienvenue ".$prenom.", votre compte vendeur vient d'être créé !<br>En vous souhaitant de bonnes ventes !</b></p>";echo '<td><a href="ECE_AMAZON.html"><img src="vendeur.png" width="150" height="150" border="10"> </a></td>';}
  else {
  echo "Erreur : $erreur";
  }
