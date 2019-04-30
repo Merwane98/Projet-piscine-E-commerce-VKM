@@ -186,7 +186,7 @@
                      width: auto;
                      float: center;
                      padding: 10px;
-                     height: 500px;
+                     height: 300px;
                      } 
               #footer{
                      background-color: #F9980C;
@@ -274,13 +274,13 @@
 </ul>
 <div id="bande">
        </div>
-<br><br>
+
 <div id="bandeacceuil">
        <h1>CATEGORIES</h1>
-      <a href="PageLivre.html"><img class="logogauche" src="livre.png" alt="logosite" width="150" height="150"></a>
-       <a href="pagemusique.html"><img class="logogauche" src="musique.png" alt="logosite" width="150" height="150"></a>
-       <a href="pagesport.html"><img class="logogauche" src="sport.png" alt="logosite" width="150" height="150"></a>
-       <a href="pagevetement.html"><img class="logogauche" src="vetement.png" alt="logosite" width="150" height="150"></a>
+      <a href="PageLivre.html"><img class="logocentre" src="livre.png" alt="logosite" width="150" height="150"></a>
+       <a href="pagemusique.html"><img class="logocentre" src="musique.png" alt="logosite" width="150" height="150"></a>
+       <a href="pagesport.html"><img class="logocentre" src="sport.png" alt="logosite" width="150" height="150"></a>
+       <a href="pagevetement.html"><img class="logocentre" src="vetement.png" alt="logosite" width="150" height="150"></a>
        </div>
 </p>
 
