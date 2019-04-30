@@ -210,9 +210,10 @@
         </style>
 </head>
 <body>
-       <div id="header">
+      <div id="header">
               <img class="logogauche" src="logoadmin.png" alt="logosite" width="50" height="50">
                <img class="logocentre" src="logopromo.png" alt="titre" width="400" height="70">
+               <a href="PageAccueil.html"><img class="logodroite" src="retour.png" alt="retour" width="50" height="50"></a>
                <img class="logodroite" src="panier.png" alt="titre" width="50" height="50">
        </div>
        
@@ -222,18 +223,18 @@
        <ul id="menuderoulant">
        <li><a href="#">CATEGORIES</a>
               <ul>
-                     <li><a href="PageLivre.html">Livres</a></li>
-                     <li><a href="pagemusique.html">Musique</a></li>
-                     <li><a href="pagevetement.html">Vêtements</a></li>
-                     <li><a href="pagesport.html">Sports et Loisir</a></li>
+                     <li><a href="#">Livres</a></li>
+                     <li><a href="#">Musique</a></li>
+                     <li><a href="#">Vêtements</a></li>
+                     <li><a href="#">Sports et Loisir</a></li>
               </ul>
        </li>
        <li><a href="#">PROMOTIONS</a>
               <ul>
-                     <li><a href="pageventeflash.html">Ventes FLASH</a></li>
-                     <li><a href="pagesaintvalentin.html">Saint Valentin</a></li>
-                     <li><a href="pagenoel.html">Noël</a></li>
-                     <li><a href="pageperemere.html">Fête des pères/mères</a></li>
+                     <li><a href="#">Ventes FLASH</a></li>
+                     <li><a href="#">Saint Valentin</a></li>
+                     <li><a href="#">Noël</a></li>
+                     <li><a href="#">Fête des pères/mères</a></li>
               </ul>
 
        </li>
