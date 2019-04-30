@@ -164,16 +164,33 @@
                      float: left;
                      padding: 5px;
                      } 
+              #bande{
+                     line-height: 30px;
+                     background-color: #F9980C;
+                     height: 2px;
+                     width: auto;
+                     float: center;
+                     padding: 5px;
+                     } 
               #section{
                      background-color: #cccccc;
-                     width: auto
+                     width: auto;
                      float: left;
                      padding: 5px;
                      height: 550px;
                      } 
+              #bandeacceuil{
+                     background-color: white;
+                     color: grey;
+                     text-align: center;
+                     width: auto;
+                     float: center;
+                     padding: 10px;
+                     height: 500px;
+                     } 
               #footer{
-                     background-color: grey;
-                     color: black;
+                     background-color: #F9980C;
+                     color: white;
                      clear: both;
                      text-align: center;
                      padding: 10px;
@@ -255,8 +272,16 @@
 
        </li>
 </ul>
-<br><br><br><br><br><br>
-
+<div id="bande">
+       </div>
+<br><br>
+<div id="bandeacceuil">
+       <h1>CATEGORIES</h1>
+      <a href="PageLivre.html"><img class="logogauche" src="livre.png" alt="logosite" width="150" height="150"></a>
+       <a href="pagemusique.html"><img class="logogauche" src="musique.png" alt="logosite" width="150" height="150"></a>
+       <a href="pagesport.html"><img class="logogauche" src="sport.png" alt="logosite" width="150" height="150"></a>
+       <a href="pagevetement.html"><img class="logogauche" src="vetement.png" alt="logosite" width="150" height="150"></a>
+       </div>
 </p>
 
        </div>
