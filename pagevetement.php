@@ -267,9 +267,26 @@
        </div>
 <br><br><br><br><br><br>
 
-</p>
+<?php
+              $mysqli = new mysqli('localhost', 'root', '', 'eceamazon');
+              $mysqli->set_charset("utf8");
+              $requete = 'SELECT * FROM Article WHERE Type="vetements" ';
+              $resultat = $mysqli->query($requete);
+              while ($ligne = $resultat->fetch_assoc()) {
 
-       </div>
+       
+ 
+                     echo '
+
+                            <h2>'.$ligne['ID']. '. ' .$ligne['Titre'].'</h2> <u>Description</u> : '.$ligne['Description'].'<br> <small>Quantité : ' .$ligne['Quantité']. '</small><br><b>Prix</b> : '.$ligne['Prix']. '<br><u> Vendeur</u> :<big> '.$ligne['Vendeur'].'</big><br><br>
+                            <img src="'.$ligne['Titre'].'.jpg "height="200" width "200"><br><br>
+                            <input type="submit" value="ajouter au panier">
+
+                     ';
+              }
+              
+              $mysqli->close();
+       ?>
        <div id="footer">
               Droit d'auteur | Copyright &copy; 2019, J.KISHOR N.VISHNUARAN R.MERWANE
        </div>
