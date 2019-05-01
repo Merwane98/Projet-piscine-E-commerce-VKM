@@ -244,7 +244,7 @@
         <li><a href="#">GERER LES ANNONCES</a>
               <ul>
                      <li><a href="">Ajouter une annonce</a></li>
-                     <li><a href="listetousarticle.php">Supprimer une annonce</a></li>
+                     <li><a href="mesannonces.php">Supprimer une annonce</a></li>
               </ul>
        </li>
        
