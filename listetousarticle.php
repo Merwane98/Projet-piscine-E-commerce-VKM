@@ -244,7 +244,7 @@
 <br>
 <div id="bande">
        </div>
-<h2>Voici la liste de toutes les annonces, vous pouvez les supprimer en cliquant sur la corbeille qui se trouve près de chaque nom. </h2>
+<h2>Voici la liste de tous les annonces, vous pouvez les supprimer en cliquant sur la corbeille qui se trouve près de chaque nom. </h2>
 
 </p>
 
