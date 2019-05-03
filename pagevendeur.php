@@ -243,7 +243,7 @@
        <ul id="menuderoulant">
         <li><a href="#">GERER LES ANNONCES</a>
               <ul>
-                     <li><a href="">Ajouter une annonce</a></li>
+                     <li><a href="Formulaire_Annonce_Vendeur.html">Ajouter une annonce</a></li>
                      <li><a href="mesannonces.php">Supprimer une annonce</a></li>
               </ul>
        </li>
@@ -253,14 +253,15 @@
 <ul id="menuderoulantdroit">
        <li><a href="#">MON COMPTE</a>
               <ul>
-                     <li><a href="pagecoordonnee.php">Mes Informations</a></li>
+                     <li><a href="pagecoordonnee_vendeur.php">Mes Informations</a></li>
+                     <li><a href="mesannonces.php">Mes Annonces</a></li>
               </ul>
        </li>
        <li><a href="#">CONTACT</a>
               <ul>
                      <li><a href="aproposdenous.php">A propos de nous</a></li>
                      <li><a href="pagecontact.php">Nous contacter</a></li>
-                     <li><a href="#">Signaler un problème</a></li>
+                     <li><a href="Formulaire_Probleme_Vendeur.html">Signaler un problème</a></li>
               </ul>
 
        </li>

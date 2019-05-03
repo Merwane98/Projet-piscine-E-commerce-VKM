@@ -2,7 +2,7 @@
 <html>
 <head>
        <meta charset="utf-8">
-       <title>ECE LIVRES</title>
+       <title>ECE AMAZON</title>
        <style type="text/css">
                             #menuderoulant, #menuderoulant ul{
               padding:0px;
@@ -167,21 +167,30 @@
               #bande{
                      line-height: 30px;
                      background-color: #F9980C;
-                     height: 10px;
+                     height: 2px;
                      width: auto;
                      float: center;
                      padding: 5px;
                      } 
               #section{
                      background-color: #cccccc;
-                     width: auto
+                     width: auto;
                      float: left;
                      padding: 5px;
                      height: 550px;
                      } 
+              #bandeacceuil{
+                     background-color: white;
+                     color: grey;
+                     text-align: center;
+                     width: auto;
+                     float: center;
+                     padding: 10px;
+                     height: 300px;
+                     } 
               #footer{
-                     background-color: grey;
-                     color: black;
+                     background-color: #F9980C;
+                     color: white;
                      clear: both;
                      text-align: center;
                      padding: 10px;
@@ -213,37 +222,59 @@
               div.float {
                                     float: left;
                                    }
+ ///////////////////////////////////////////////////////////////////////////  
+       VISHNU ICI TU DOIS AJOUTER LA PHOTO de FOND que le vendeur a choisit
+       body{background-image:url("IIIIIIICIIIIIII")}
+//////////////////////////////////////////////////////////////////////////////////////                                  
         </style>
 </head>
 <body>
+
        <div id="header">
               <a href="PageAccueil.php"><img class="logogauche" src="logodeconnexion.png" alt="logosite" width="50" height="50"></a>
-               <img class="logocentre" src="logoadministrateur.png" alt="titre" width="600" height="70">
+               <img class="logocentre" src="titresite.png" alt="titre" width="400" height="70">
+               <a href="PageAccueil.php"><img class="logogauche" src="logodeconnexion.png" alt="logosite" width="50" height="50"></a>
+ /////////////////////////////////////////////////////////////////////////////////////:              VISHNU ICI TU DOIS AJOUTER LA PHOTO DU VENDEUR 
+//////////////////////////////////////////////////////////////////////////////////////
        </div>
        
 
+
 <div class="float">
        <ul id="menuderoulant">
-       <li><a href="#">GERER LES ANNONCES</a>
+        <li><a href="#">GERER LES ANNONCES</a>
               <ul>
-                     <li><a href="Formulaire_Annonce_Administrateur.html">Ajouter une annonce</a></li>
-                     <li><a href="listetousarticle.php">Supprimer une annonce</a></li>
+                     <li><a href="Formulaire_Annonce_Vendeur.html">Ajouter une annonce</a></li>
+                     <li><a href="mesannonces.php">Supprimer une annonce</a></li>
               </ul>
-       </li>
-       <li><a href="#">GERER LES VENDEURS</a>
-              <ul>
-                     <li><a href="Formulaire_Inscription_vendeur_administrateur.html">Ajouter un vendeur</a></li>
-                     <li><a href="listetousvendeur.php">Supprimer un vendeur</a></li>
-              </ul>
-
        </li>
        
 </ul>
 </div>
-<br>
+<ul id="menuderoulantdroit">
+       <li><a href="#">MON COMPTE</a>
+              <ul>
+                     <li><a href="pagecoordonnee_vendeur.php">Mes Informations</a></li>
+                     <li><a href="pageannoncevendeur.php">Mes Annonces</a></li>
+              </ul>
+       </li>
+       <li><a href="#">CONTACT</a>
+              <ul>
+                     <li><a href="aproposdenous.php">A propos de nous</a></li>
+                     <li><a href="pagecontact.php">Nous contacter</a></li>
+                     <li><a href="Formulaire_Probleme_Vendeur.html">Signaler un problème</a></li>
+              </ul>
+
+       </li>
+</ul>
 <div id="bande">
        </div>
-<h2>Voici la liste de tous les vendeurs, vous pouvez les supprimer en cliquant sur la corbeille qui se trouve près de chaque nom. </h2>
+
+<center><h1>MES INFORMATIONS</h1><br></center>
+      <h3> ///////////////////VISHNUUUU/////////////////////</h3>
+
+ 
+
 
 </p>
 

@@ -227,13 +227,13 @@
        <ul id="menuderoulant">
        <li><a href="#">GERER LES ANNONCES</a>
               <ul>
-                     <li><a href="">Ajouter une annonce</a></li>
+                     <li><a href="Formulaire_Annonce_Administrateur.html">Ajouter une annonce</a></li>
                      <li><a href="listetousarticle.php">Supprimer une annonce</a></li>
               </ul>
        </li>
        <li><a href="#">GERER LES VENDEURS</a>
               <ul>
-                     <li><a href="">Ajouter un vendeur</a></li>
+                     <li><a href="Formulaire_Inscription_vendeur_administrateur.html">Ajouter un vendeur</a></li>
                      <li><a href="listetousvendeur.php">Supprimer un vendeur</a></li>
               </ul>
 

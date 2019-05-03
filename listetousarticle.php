@@ -227,13 +227,13 @@
        <ul id="menuderoulant">
        <li><a href="#">GERER LES ANNONCES</a>
               <ul>
-                     <li><a href="">Ajouter une annonce</a></li>
+                     <li><a href="Formulaire_Annonce_Administrateur.html">Ajouter une annonce</a></li>
                      <li><a href="listetousarticle.php">Supprimer une annonce</a></li>
               </ul>
        </li>
        <li><a href="#">GERER LES VENDEURS</a>
               <ul>
-                     <li><a href="">Ajouter un vendeur</a></li>
+                     <li><a href="Formulaire_Inscription_vendeur_administrateur.html">Ajouter un vendeur</a></li>
                      <li><a href="listetousvendeur.php">Supprimer un vendeur</a></li>
               </ul>
 
@@ -244,13 +244,46 @@
 <br>
 <div id="bande">
        </div>
-<h2>Voici la liste de tous les annonces, vous pouvez les supprimer en cliquant sur la corbeille qui se trouve près de chaque nom. </h2>
+<h2>Voici la liste de toutes les annonces, vous pouvez les supprimer en cliquant sur la corbeille qui se trouve près de chaque nom. </h2>
 
-</p>
+<?php
+              $mysqli = new mysqli('localhost', 'root', '', 'eceamazon');
+              $mysqli->set_charset("utf8");
+              $requete = 'SELECT * FROM Article ';
+              $resultat = $mysqli->query($requete);
+              while ($ligne = $resultat->fetch_assoc()) {
+                     
+                     echo '
 
-       </div>
+                            <img src="'.$ligne['Titre'].'.jpg "height="200" width "200"><br><br>';
+                     ?>
+
+                     
+                            <tr>
+                                   <td><a href="delete.php?id=<?php echo $ligne['ID']?>">Suppprimer</a></td>
+                                   <td><h2><?php echo $ligne['Titre']?></h2><br></td>
+                                   <td><u>Description</u> :<?php echo $ligne['Description']?><br></td>
+                                   <td><small>Quantité : <?php echo $ligne['Quantité']?></small><br></td>
+                                   <td><b>Prix : <?php echo $ligne['Prix']?></b><br></td>
+                                   <td><u>Vendeur</u> : <?php echo $ligne['Vendeur']?><br></td>
+                                   <td> <div id="bandegrise"><br></div><br></td>
+                                   
+                            
+                            </tr>
+
+                     
+       
+              <?php
+              }
+                     
+              $mysqli->close();
+       ?>
+
+
        <div id="footer">
               Droit d'auteur | Copyright &copy; 2019, J.KISHOR N.VISHNUARAN R.MERWANE
        </div>
 </body>
 </html>
+
+<a href="?action=supprimer">Supprimer un article</a>

@@ -222,7 +222,6 @@
               <a href="formulaireadmin.php"><img class="logogauche" src="logoadmin.png" alt="logosite" width="50" height="50"></a>
                <img class="logocentre" src="logopromo.png" alt="titre" width="400" height="70">
                <a href="PageAccueil.php"><img class="logodroite" src="retour.png" alt="retour" width="50" height="50"></a>
-               <img class="logodroite" src="panier.png" alt="titre" width="50" height="50">
        </div>
        
 
@@ -251,15 +250,15 @@
 <ul id="menuderoulantdroit">
        <li><a href="#">MON COMPTE</a>
               <ul>
-                     <li><a href="#">Connexion</a></li>
-                     <li><a href="#">Inscription</a></li>
+                     <li><a href="Formulaire_Connexion.html">Connexion</a></li>
+                     <li><a href="Formulaire_Inscription_choix.html">Inscription</a></li>
               </ul>
        </li>
        <li><a href="#">CONTACT</a>
               <ul>
                      <li><a href="aproposdenous.php">A propos de nous</a></li>
                      <li><a href="pagecontact.php">Nous contacter</a></li>
-                     <li><a href="#">Signaler un problème</a></li>
+                     <li><a href="Formulaire_Probleme.html">Signaler un problème</a></li>
               </ul>
 
        </li>

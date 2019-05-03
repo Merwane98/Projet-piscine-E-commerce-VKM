@@ -171,6 +171,14 @@
                      width: auto;
                      float: center;
                      padding: 5px;
+                     }
+              #bandegrise{
+                     line-height: 30px;
+                     background-color: grey;
+                     height: 6px;
+                     width: auto;
+                     float: center;
+                     padding: 5px;
                      } 
               #section{
                      background-color: #cccccc;
@@ -186,6 +194,20 @@
                      text-align: center;
                      padding: 10px;
                      }
+               #bandearticle{
+                     background-color: grey;
+                     color: black;
+                     clear: both;
+                     text-align: left;
+                     padding: 10px;
+                     }
+              #couleurtitre{
+                     background-color: grey;
+                     color:#F9980C;
+                     clear: both;
+                     text-align: left;
+                     padding: 10px;
+                     }
               #categoriegauche{
                      background-color: white;
                      color: grey;
@@ -198,6 +220,10 @@
                      text-align: right;
                      padding: 5px;
                      } 
+              #articlegauche {
+                      float: left;
+                     padding-right: 30px;
+                     }      
               .logogauche {
                       float: left;
                      padding-right: 30px;
@@ -220,7 +246,6 @@
               <a href="formulaireadmin.php"><img class="logogauche" src="logoadmin.png" alt="logosite" width="50" height="50"></a>
                <img class="logocentre" src="logolivre.png" alt="titre" width="400" height="70">
                <a href="PageAccueil.php"><img class="logodroite" src="retour.png" alt="retour" width="50" height="50"></a>
-               <img class="logodroite" src="panier.png" alt="titre" width="50" height="50">
        </div>
        
 
@@ -250,41 +275,58 @@
 <ul id="menuderoulantdroit">
        <li><a href="#">MON COMPTE</a>
               <ul>
-                     <li><a href="#">Connexion</a></li>
-                     <li><a href="#">Inscription</a></li>
+                     <li><a href="Formulaire_Connexion.html">Connexion</a></li>
+                     <li><a href="Formulaire_Inscription_choix.html">Inscription</a></li>
               </ul>
        </li>
        <li><a href="#">CONTACT</a>
               <ul>
                      <li><a href="aproposdenous.php">A propos de nous</a></li>
                      <li><a href="pagecontact.php">Nous contacter</a></li>
-                     <li><a href="#">Signaler un problème</a></li>
+                     <li><a href="Formulaire_Probleme.html">Signaler un problème</a></li>
               </ul>
 
        </li>
 </ul>
 <div id="bande">
        </div>
-<br><br><br><br><br><br>
 
 <?php
               $mysqli = new mysqli('localhost', 'root', '', 'eceamazon');
               $mysqli->set_charset("utf8");
               $requete = 'SELECT * FROM Article WHERE Type="livre" ';
               $resultat = $mysqli->query($requete);
-              while ($ligne = $resultat->fetch_assoc()) {
+              while ($ligne = $resultat->fetch_assoc()) {  
 
-       
- 
+                     ?>
+              <div id="bandearticle">
+              <div id="articlegauche">
+  
+
+       <?php
                      echo '
 
-                            <h2>'.$ligne['ID']. '. ' .$ligne['Titre'].'</h2> <u>Description</u> : '.$ligne['Description'].'<br> <small>Quantité : ' .$ligne['Quantité']. '</small><br><b>Prix</b> : '.$ligne['Prix']. '<br><u> Vendeur</u> :<big> '.$ligne['Vendeur'].'</big><br><br>
-                            <img src="'.$ligne['Titre'].'.jpg "height="200" width "200"><br><br>
-                            <input type="submit" value="ajouter au panier">
+                            <img src="'.$ligne['Titre'].'.jpg "height="200" width "200"><br><br>';
+                     ?>
+</div>
+    
+                            <tr>
+                                   <td><h2><?php echo $ligne['Titre']?></h2><br></td>
+                                   <td><u>Description</u> :<?php echo $ligne['Description']?><br></td>
+                                   <td><small>Quantité : <?php echo $ligne['Quantité']?></small><br></td>
+                                   <td><b>Prix : <?php echo $ligne['Prix']?></b><br></td>
+                                   <td><u>Vendeur</u> : <?php echo $ligne['Vendeur']?><br></td>
+                                   
+                            
+                            </tr>
 
-                     ';
+                     </div>
+                     <div id="bande">
+       </div>
+       
+              <?php
               }
-              
+                     
               $mysqli->close();
        ?>
        <div id="footer">

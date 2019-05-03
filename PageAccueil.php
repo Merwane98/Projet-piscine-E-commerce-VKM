@@ -188,6 +188,15 @@
                      padding: 10px;
                      height: 300px;
                      } 
+              #bandemeteo{
+                     background-color: white;
+                     color: grey;
+                     text-align: center;
+                     width: auto;
+                     float: right;
+                     padding: 10px;
+                     height: 300px;
+                     } 
               #footer{
                      background-color: #F9980C;
                      color: white;
@@ -229,7 +238,6 @@
               <a href="formulaireadmin.php"><img class="logogauche" src="logoadmin.png" alt="logosite" width="50" height="50">
                <img class="logocentre" src="titresite.png" alt="titre" width="400" height="70">
                <a href="PageAccueil.php"><img class="logodroite" src="retour.png" alt="retour" width="50" height="50"></a>
-               <img class="logodroite" src="panier.png" alt="titre" width="50" height="50">
        </div>
        
 
@@ -259,32 +267,41 @@
 <ul id="menuderoulantdroit">
        <li><a href="#">MON COMPTE</a>
               <ul>
-                     <li><a href="#">Connexion</a></li>
-                     <li><a href="#">Inscription</a></li>
+                     <li><a href="Formulaire_Connexion.html">Connexion</a></li>
+                     <li><a href="Formulaire_Inscription_choix.html">Inscription</a></li>
               </ul>
        </li>
        <li><a href="#">CONTACT</a>
               <ul>
                      <li><a href="aproposdenous.php">A propos de nous</a></li>
                      <li><a href="pagecontact.php">Nous contacter</a></li>
-                     <li><a href="#">Signaler un problème</a></li>
+                     <li><a href="Formulaire_Probleme.html">Signaler un problème</a></li>
               </ul>
 
        </li>
 </ul>
 <div id="bande">
        </div>
-
+<div class="float">
+<center><embed src="http://www.pageplugins.com/generators/ladybug_note/ladybugnote.swf" FlashVars="t=Bonjour à toi,&m=Nous te souhaitons BIENVENUE sur         ECE AMAZON !&f=J.KISHOR V.VISHNU R.MERWANE&px=41.45&py=53.1&n=2&dom" quality="high" wmode="transparent" width="380" height="260" name="Lady Bug Note" align="middle" allowScriptAccess="samedomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /></embed><br><font size="2"></font></center>
+</div>
+<div class="float">
 <div id="bandeacceuil">
+
        <h1>CATEGORIES</h1>
       <a href="PageLivre.php"><img class="logocentre" src="livre.png" alt="logosite" width="150" height="150"></a>
        <a href="pagemusique.php"><img class="logocentre" src="musique.png" alt="logosite" width="150" height="150"></a>
        <a href="pagesport.php"><img class="logocentre" src="sport.png" alt="logosite" width="150" height="150"></a>
        <a href="pagevetement.php"><img class="logocentre" src="vetement.png" alt="logosite" width="150" height="150"></a>
        </div>
-</p>
-
        </div>
+<div id="bandemeteo">
+       <div id="cont_NzUwNTZ8NXwxfDF8NHxmOTk2MGN8MXxGRkZGRkZ8Y3wx"><div id="spa_NzUwNTZ8NXwxfDF8NHxmOTk2MGN8MXxGRkZGRkZ8Y3wx"><a id="a_NzUwNTZ8NXwxfDF8NHxmOTk2MGN8MXxGRkZGRkZ8Y3wx" href="http://www.meteocity.com/france/paris_v75056/" target="_blank" style="color:#333;text-decoration:none;">Météo Paris</a> ©<a href="http://www.meteocity.com">meteocity.com</a></div><script type="text/javascript" src="http://widget.meteocity.com/js/NzUwNTZ8NXwxfDF8NHxmOTk2MGN8MXxGRkZGRkZ8Y3wx"></script></div>
+</div>
+
+</p>
+</div>
+<br>
        <div id="footer">
               Droit d'auteur | Copyright &copy; 2019, J.KISHOR N.VISHNUARAN R.MERWANE
        </div>
