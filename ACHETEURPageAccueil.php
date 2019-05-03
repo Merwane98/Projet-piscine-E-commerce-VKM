@@ -1,3 +1,6 @@
+<?php
+       session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -199,7 +202,7 @@
                      background-color: white;
                      color: grey;
                      text-align: left;
-                     padding: 5px;
+                     padding: 0px;
                      } 
               #categoriedroite{
                      background-color: white;
@@ -226,9 +229,33 @@
 </head>
 <body>
        <div id="header">
+          
                <img class="logocentre" src="titresite.png" alt="titre" width="400" height="70">
                <a href="PageAccueil.php"><img class="logodroite" src="logodeconnexion.png" alt="retour" width="50" height="50"></a>
+               
+
                <a href="ACHETEURpannier.php"><img class="logodroite" src="panier.png" alt="titre" width="50" height="50"></a>
+               <div id="categoriegauche">    
+<?php
+       $mail=$_SESSION['a'];
+       $mysqli = new mysqli('localhost', 'root', '', 'eceamazon');
+       $mysqli->set_charset("utf8");
+       $requete = "SELECT * FROM Acheteur WHERE AdresseMail =  '$mail' ";
+       $resultat = $mysqli->query($requete);              
+       while ($ligne = $resultat->fetch_assoc()) 
+       { ?>
+               
+              <tr>
+                   <td><h2>Bonjour <?php echo $ligne['Civilite']?> <?php echo $ligne['Nom']?> <?php echo $ligne['Prenom']?>.</h2></td>                
+                                                                                 
+              </tr>
+       <?php
+       }
+              
+       $mysqli->close();
+       
+?>
+</div>
        </div>
        
 
@@ -265,7 +292,7 @@
               <ul>
                      <li><a href="ACHETEURaproposdenous.php">A propos de nous</a></li>
                      <li><a href="ACHETEURpagecontact.php">Nous contacter</a></li>
-                     <li><a href="#">Signaler un problème</a></li>
+                     <li><a href="ACHETEURFormulaire_Probleme.html">Signaler un problème</a></li>
               </ul>
 
        </li>
@@ -299,3 +326,4 @@
        </div>
 </body>
 </html>
+

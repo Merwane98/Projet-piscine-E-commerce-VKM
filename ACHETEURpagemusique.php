@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,6 +39,17 @@
               #menuderoulant li:hover ul{
               max-height:15em;
               }
+              #bandearticle{
+                     background-color: grey;
+                     color: black;
+                     clear: both;
+                     text-align: left;
+                     padding: 10px;
+                     }
+#articlegauche {
+                      float: left;
+                     padding-right: 30px;
+                     }      
               /* background des liens menus */
               #menuderoulant li:first-child{
               background-color: #F9980C;
@@ -221,6 +235,27 @@
                <img class="logocentre" src="logomusique.png" alt="titre" width="400" height="70">
                <a href="PageAccueil.php"><img class="logodroite" src="logodeconnexion.png" alt="retour" width="50" height="50"></a>
                <a href="ACHETEURpannier.php"><img class="logodroite" src="panier.png" alt="titre" width="50" height="50"></a>
+               <div id="categoriegauche">    
+<?php
+       $mail=$_SESSION['a'];
+       $mysqli = new mysqli('localhost', 'root', '', 'eceamazon');
+       $mysqli->set_charset("utf8");
+       $requete = "SELECT * FROM Acheteur WHERE AdresseMail =  '$mail' ";
+       $resultat = $mysqli->query($requete);              
+       while ($ligne = $resultat->fetch_assoc()) 
+       { ?>
+               
+              <tr>
+                   <td><h2>Bonjour <?php echo $ligne['Civilite']?> <?php echo $ligne['Nom']?> <?php echo $ligne['Prenom']?>.</h2></td>                
+                                                                                 
+              </tr>
+       <?php
+       }
+              
+       $mysqli->close();
+       
+?>
+</div>
        </div>
        
 
@@ -257,28 +292,32 @@
               <ul>
                      <li><a href="ACHETEURaproposdenous.php">A propos de nous</a></li>
                      <li><a href="ACHETEURpagecontact.php">Nous contacter</a></li>
-                     <li><a href="#">Signaler un problème</a></li>
+                     <li><a href="ACHETEURFormulaire_Probleme.html">Signaler un problème</a></li>
               </ul>
 
        </li>
 </ul>
 <div id="bande">
        </div>
-<br><br><br><br><br><br>
+
 
 <?php
               $mysqli = new mysqli('localhost', 'root', '', 'eceamazon');
               $mysqli->set_charset("utf8");
-              $requete = 'SELECT * FROM Article WHERE Type="musique" ';
+              $requete = 'SELECT * FROM Article WHERE Type LIKE "musique%" ';
               $resultat = $mysqli->query($requete);
               while ($ligne = $resultat->fetch_assoc()) {
 
+       ?>
+              <div id="bandearticle">
+              <div id="articlegauche">
+  
+
        
  
-                     echo '
-
-                            <img src="'.$ligne['Titre'].'.jpg "height="200" width "200"><br><br>';
-                     ?>
+                     <img src="<?php echo $ligne['URLimage']?>"height="200" width= "200"><br><br>
+              
+                     </div>
 
                      
                             <tr>
@@ -287,12 +326,14 @@
                                    <td><small>Quantité : <?php echo $ligne['Quantité']?></small><br></td>
                                    <td><b>Prix : <?php echo $ligne['Prix']?></b><br></td>
                                    <td><u>Vendeur</u> : <?php echo $ligne['Vendeur']?><br></td>
-                                   <td><input type="submit" value="ajouter au panier"></td>
-                                   <td> <div id="bandegrise"><br></div><br></td>
+                                   <td><a href="ajouterpanier.php?id=<?php echo $ligne['ID']?>">Ajouter</a></td>
+                                   
                                    
                             
                             </tr>
-
+</div>
+                     <div id="bande">
+       </div>
                      
        
               <?php

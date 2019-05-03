@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,6 +24,17 @@
               text-align:center;
 
               }
+              #bandearticle{
+                     background-color: grey;
+                     color: black;
+                     clear: both;
+                     text-align: left;
+                     padding: 10px;
+                     }
+#articlegauche {
+                      float: left;
+                     padding-right: 30px;
+                     }      
               
               #menuderoulant ul{
               position:absolute;
@@ -229,6 +243,27 @@
               
                <img class="logocentre" src="titresite.png" alt="titre" width="400" height="70">
                <a href="PageAccueil.php"><img class="logodroite" src="logodeconnexion.png" alt="retour" width="50" height="50"></a>
+               <div id="categoriegauche">    
+<?php
+       $mail=$_SESSION['a'];
+       $mysqli = new mysqli('localhost', 'root', '', 'eceamazon');
+       $mysqli->set_charset("utf8");
+       $requete = "SELECT * FROM Acheteur WHERE AdresseMail =  '$mail' ";
+       $resultat = $mysqli->query($requete);              
+       while ($ligne = $resultat->fetch_assoc()) 
+       { ?>
+               
+              <tr>
+                   <td><h2>Bonjour <?php echo $ligne['Civilite']?> <?php echo $ligne['Nom']?> <?php echo $ligne['Prenom']?>.</h2></td>                
+                                                                                 
+              </tr>
+       <?php
+       }
+              
+       $mysqli->close();
+       
+?>
+</div>
        </div>
        
 
@@ -265,7 +300,7 @@
               <ul>
                      <li><a href="ACHETEURaproposdenous.php">A propos de nous</a></li>
                      <li><a href="ACHETEURpagecontact.php">Nous contacter</a></li>
-                     <li><a href="#">Signaler un problème</a></li>
+                     <li><a href="ACHETEURFormulaire_Probleme.html">Signaler un problème</a></li>
               </ul>
 
        </li>
@@ -282,23 +317,42 @@
 
 
 <?php
+              $mail=$_SESSION['a'];
               $mysqli = new mysqli('localhost', 'root', '', 'eceamazon');
               $mysqli->set_charset("utf8");
-              $requete = 'SELECT * FROM panier WHERE Achteur= ';
+              $requete = "SELECT * FROM panier WHERE Acheteur='$mail'";
               $resultat = $mysqli->query($requete);
-              while ($ligne = $resultat->fetch_assoc()) {
+              while ($ligne = $resultat->fetch_assoc()) {  
 
-       
- 
-                     echo '
+                     ?>
+              <div id="bandearticle">
+              <div id="articlegauche">
+  
 
-                            <h2>'.$ligne['ID']. '. ' .$ligne['Titre'].'</h2> <u>Description</u> : '.$ligne['Description'].'<br> <small>Quantité : ' .$ligne['Quantité']. '</small><br><b>Prix</b> : '.$ligne['Prix']. '<br><u> Vendeur</u> :<big> '.$ligne['Vendeur'].'</big><br><br>
-                            <img src="'.$ligne['Titre'].'.jpg "height="200" width "200"><br><br>
-                            <input type="submit" value="ajouter au panier">
-
-                     ';
-              }
+      
+                     <img src="<?php echo $ligne['URLimage']?>"height="200" width= "200"><br><br>
               
+                     </div>
+    
+                            <tr>
+                                   <td><h2><?php echo $ligne['Titre']?></h2><br></td>
+                                   <td><u>Description</u> :<?php echo $ligne['Description']?><br></td>
+                                   <td><small>Quantité : <?php echo $ligne['Quantité']?></small><br></td>
+                                   <td><b>Prix : <?php echo $ligne['Prix']?></b><br></td>
+                            </tr>
+
+                     </div>
+                     <div id="bande">
+       </div>
+       <div id="bande">
+       </div>
+       <div id="bande">
+       </div>
+       
+       
+              <?php
+              }
+                     
               $mysqli->close();
        ?>
        <div id="footer">
@@ -306,3 +360,4 @@
        </div>
 </body>
 </html>
+
